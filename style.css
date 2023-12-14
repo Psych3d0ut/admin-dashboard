@@ -1,0 +1,48 @@
+:root {
+    --nav-bg-color-dark: #222;
+    --bg-color-dark: #333;
+    --bg-color-light: whitesmoke;
+    --text-color-dark: whitesmoke;
+}
+
+/* Browser Stye Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--nav-bg-color-dark);
+    height: 100vh;
+    width: 16vw;
+    display: flex;
+    flex-direction: row;
+    font-family: "Afacad", sans-serif;
+}
+
+#navHead {
+    padding-left: 0.5vw;
+    width: 100%;
+    margin-top: 2vh;
+    padding-right: 2.5vw;
+    color: var(--text-color-dark);
+
+}
+
+#navLogo {
+    height: 8vh;
+    display: inline-block;
+}
+
+nav h1 {
+    margin-left: 0.0vw;
+    text-align: center;
+    float: inline-end;
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--bg-color-dark);
+}
