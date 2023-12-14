@@ -73,7 +73,7 @@ nav p {
     padding-top: 50%;
 }
 
-#navBody {
+#navBody, #navFooter {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
@@ -86,15 +86,7 @@ nav p {
 }
 
 #navFooter {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    height: fit-content;
-    margin: 0 auto;
-    margin-top: 2vh;
-    padding-right: 2.5vw;
-    color: var(--text-color-dark);
-    align-items: center;
+    margin: auto;
 }
 
 #wrapper {
