@@ -2,6 +2,7 @@
     --nav-bg-color-dark: #222;
     --bg-color-dark: #333;
     --bg-color-light: whitesmoke;
+    --text-color-dark: #333;
     --text-color-dark: whitesmoke;
 }
 
@@ -11,38 +12,45 @@ html, body {
     padding: 0;
 }
 
+body {
+    background-color: var(--bg-color-dark);
+}
+
 nav {
     background-color: var(--nav-bg-color-dark);
     height: 100vh;
     width: 16vw;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr, repeat(9, 1fr);
     font-family: "Afacad", sans-serif;
 }
 
 #navHead {
     padding-left: 0.5vw;
-    width: 100%;
     margin-top: 2vh;
     padding-right: 2.5vw;
     color: var(--text-color-dark);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
 
 }
 
+.navGrid {
+    margin: 0 auto;
+}
+
+
 #navLogo {
-    height: 8vh;
-    display: inline-block;
+    height: 6vh;
 }
 
 nav h1 {
-    margin-left: 0.0vw;
     text-align: center;
-    float: inline-end;
+    float: inline-start;
     font-size: 1.8rem;
     line-height: 1.6rem;
     font-weight: normal;
 }
 
-body {
-    background-color: var(--bg-color-dark);
-}
