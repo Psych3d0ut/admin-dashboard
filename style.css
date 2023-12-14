@@ -12,6 +12,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Afacad", sans-serif;
 }
 
 body {
@@ -100,5 +101,58 @@ nav p {
     background-color: var(--head-bg-color-dark);
     width: 100%;
     height:  20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#headUpper {
+    height: 40%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content 5fr min-content min-content 1fr;
+    align-items: center;
+    margin-right: 2%;
+}
+
+#searchImg {
+    height: 3vh;
+    margin: auto 50%;
+}
+
+#alertImg {
+    height: 4vh;
+}
+
+#profilePic {
+    border-radius: 50%;
+    height: 6vh;
+    display: inline;
+    margin-left: 15%;
+}
+
+#searchbar {
+    height: 3vh;
+    display: inline;
+    border-radius: 15px;
+    padding-left: 2%;
+    width: 60%;
+    margin-left: 2%;
+    background-color: var(--bg-color-dark);
+    border: none;
+}
+
+.searchGrid {
+    margin-right: 0;
+}
+
+.searchGrid h1 {
+    display: inline;
+    padding-left: 5%;
+    color: var(--text-color-dark);
+}
+
+#headLower {
+
 }
 
